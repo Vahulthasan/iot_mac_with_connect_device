@@ -1,0 +1,45 @@
+name: master_phase
+version: 1.0.0+1
+
+# Dependencies specify other packages that your package needs in order to work.
+
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+description: A smart LED controller app
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.1
+
+flutter:
+  uses-material-design: true
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/automation.png"
+
+
+dev_dependencies:
+  flutter_native_splash: ^2.4.0
+
+flutter_native_splash:
+  color: "#ffffff" # Background color
+  image: assets/icon/automation.png # Your logo/image
+  android: true
+  ios: true
+  fullscreen: true
+
+conn_dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.1
+  connectivity_plus: ^6.0.1
+  shared_preferences: ^2.2.2
